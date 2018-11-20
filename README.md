@@ -134,7 +134,7 @@ go build
 cd %USERPROFILE%\go\src\encrypt
 encrypt.exe
 ```
-10. Successful output would look like this:
+10. Successful output will look like this:
 ```
 C:\Users\hfleitas\go\src\encrypt>encrypt.exe
  password:_g0encryptSQL
@@ -147,6 +147,18 @@ C:\Users\hfleitas\go\src\encrypt>encrypt.exe
 somenumber:1
 somechars:abc
 bye
+```
+11. Unsuccessful output will look like this:
+```
+C:\Users\hfleitas\go\src\encrypt>encrypt.exe
+ password:_g0encryptSQL
+ port:1433
+ server:hfleitas
+ user:mssqlgo
+ Encrypt:true
+ TrustServerCertificate:true
+ connString:server=hfleitas;user id=mssqlgo;password=_g0encryptSQL;port=1433;encrypt=true;trust=true
+2018/11/20 13:37:41 Prepare failed:TLS Handshake failed: x509: certificate is valid for HFleitas.fleitasarts.com, not hfleitas
 ```
 
 ## Authors
