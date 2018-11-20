@@ -77,7 +77,7 @@ var (
 	server        = flag.String("server", "HFleitas.fleitasarts.com", "the database server")
 	user          = flag.String("user", "mssqlgo", "the sql login database user")
 	encrypt       = flag.String("Encrypt", "true", "false by default")
-	trust		      = flag.String("TrustServerCertificate", "true", "false by default")
+	trust	      = flag.String("TrustServerCertificate", "true", "false by default")
 )
 
 func main() {
